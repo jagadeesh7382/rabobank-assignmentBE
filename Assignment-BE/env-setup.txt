@@ -1,0 +1,14 @@
+# Rabobank Customer Statement Processor
+Rabobank receives monthly deliveries of customer statement records. This information is delivered in two formats, CSV and XML. These records need to be validated.
+1. Open J2ee eclipse.
+2. Import existing Maven project into eclipse.
+3. Run maven command to install dependency.
+
+4. Install apache Tomcat 7.0 version and add server to eclipse to run.
+5. If any errors showing in project add Junit3/4
+	select project --> properties --> java build path --> Libraries --> Add Library --> Add JUnit library
+6. selected project run on server, open postman and run the service URL mentioned below
+	a) HTTP code: post
+	b) Upload input csv/xml file in the service using postman client.
+
+	c) http://localhost:8080/RobobankCSP/rabobank/processStatment
